@@ -6,7 +6,7 @@ pip3 install jupyterlab
 jupyter notebook --generate-config
 ```
 
-2) In the following steps *my_name* refers to Ubuntu user and *website.com* is the URL of your choice. Now,first edit the Jupyer Lab config via `sudo nano ~/.jupyter/jupyter_notebook_config.py`. I'm using below settings but do make sure you're using the correct `notebook_dir` and IP address. I'm specifying `base_url` so I can later query my jupyter lab server with `website.com/lab`. Also I'm sticking to default port 8888 but it can be another one:
+2) In the following steps *my_name* refers to Ubuntu user and *website.com* is the URL of your choice. Now, first edit the Jupyer Lab config via `sudo nano ~/.jupyter/jupyter_notebook_config.py`. I'm using below settings but do make sure you're using the correct `notebook_dir` and IP address. I'm specifying `base_url` so I can later query my jupyter lab server with `website.com/lab`. Also I'm sticking to default port 8888 but it can be another one:
 
 ```
 c.NotebookApp.base_url = u'/lab'
