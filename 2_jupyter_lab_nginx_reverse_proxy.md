@@ -116,7 +116,7 @@ Description=Jupyter Notebook
 Type=simple
 PIDFile=/run/jupyter.pid
 ExecStart=/usr/local/bin/jupyter-lab --config=/home/my_name/.jupyter/jupyter_notebook_config.py
-User=claudio
+User=my_name
 WorkingDirectory=/home/my_name/jupyter
 Restart=always
 RestartSec=10
