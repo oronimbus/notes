@@ -125,7 +125,7 @@ RestartSec=10
 WantedBy=multi-user.target
 ```
 
-8) If for any reason you have two jupyter lab instances installed - you can check by running `which python` and `which jupyter` - then there's an easy fix. Another way to check is by running `echo \$PATH` - you will see both the miniconda3 path as well as `usr/local/lib/bin/`. For example in my case I have the miniconda3 distribution which messes with a local JL instance. When I run `jupyter-lab` I get my conda instance - however my `systemd` file is not pointing to that path. First find out which is the desired path to the python instance. In my case it's `/home/my_name/miniconda3/bin/python3.7`. Run `sudo nano /usr/local/bin/jupyter-lab`
+8) If for any reason you have two jupyter lab instances installed - you can check by running `which python` and `which jupyter` - then there's an easy fix. Another way to check is by running `echo $PATH` - you will see both the miniconda3 path as well as `usr/local/lib/bin/`. For example in my case I have the miniconda3 distribution which messes with a local JL instance. When I run `jupyter-lab` I get my conda instance - however my `systemd` file is not pointing to that path. First find out which is the desired path to the python instance. In my case it's `/home/my_name/miniconda3/bin/python3.7`. Run `sudo nano /usr/local/bin/jupyter-lab`
 and then replace the bit at the top `#!/usr/bin/python3` with ``#!/home/my_name/miniconda3/bin/python3.7`.
 
 
