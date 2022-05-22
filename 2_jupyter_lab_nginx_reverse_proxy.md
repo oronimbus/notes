@@ -1,4 +1,4 @@
-## Setting up an NGINX reverse proxy for Jupyter Lab 1.0.x in Ubuntu 18.04
+# Setting up an NGINX reverse proxy for Jupyter Lab 1.0.x in Ubuntu 18.04
 
 1) This requires sudo access rights so make sure you have that set up. Install jupyter lab and generate the config. The default path for this is typically `~/.jupyter/jupyter_notebook_config.py` :
 ```

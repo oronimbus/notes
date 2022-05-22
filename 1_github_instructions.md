@@ -1,4 +1,4 @@
-## How to create a new repo in Github
+# How to create a new repo in Github
 
 1) For Windows, right-click on folder and Git Bash. For Mac just use terminal and cd into folder and then type:
 ```

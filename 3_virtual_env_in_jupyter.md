@@ -1,4 +1,4 @@
-## Using a virtual environment in Jupyter Lab
+# Using a virtual environment in Jupyter Lab
 
 > virtualenv name_env
 
